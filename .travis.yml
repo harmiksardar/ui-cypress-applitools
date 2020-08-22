@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+ - "node"
+
+addons:
+  chrome: stable
+
+dist: xenial
+services:
+  - xvfb
+
+script:
+- export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
