@@ -1,0 +1,16 @@
+{
+  "name": "ui-cypress",
+  "version": "1.0.0",
+  "description": "Cypress",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@applitools/eyes-cypress": "^3.13.4",
+    "cypress": "^4.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harmik",
+  "license": "ISC"
+}
