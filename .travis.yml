@@ -10,4 +10,5 @@ services:
   - xvfb
 
 script:
+- npx cypress run
 - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
