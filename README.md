@@ -2,4 +2,4 @@
 
 # ui-cypress-applitools
 
-Automating Functional (Cypress) and Visual UI (Applitools) testing is so much fun (Goodbye Selenium!!)
+Automating Functional (Cypress) + Visual UI (Applitools) testing is so much fun (Bye Bye Selenium!!)
