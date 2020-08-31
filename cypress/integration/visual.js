@@ -7,12 +7,16 @@ describe('rathdowneyogaroom test', () => {
       browser: { width: 1680, height: 1050 }
     });
       cy.eyesCheckWindow('Home screen')
-    //cy.get('button').click();
-    //cy.eyesCheckWindow('Click!');
+
     cy.get(':nth-child(3) > .button').click()
     cy.url().should('include', 'classes')
 
       cy.eyesCheckWindow('Classes screen')
+
+    cy.get('#buttons06 > li > .button').click()
+    cy.url().should('not.include', 'classes')
+
+      cy.eyesCheckWindow('Back to Home screen')
 
     cy.eyesClose();
   });
