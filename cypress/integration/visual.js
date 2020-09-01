@@ -3,9 +3,13 @@ describe('rathdowneyogaroom test', () => {
     cy.visit('https://rathdowneyogaroom.com.au')
     cy.eyesOpen({
       appName: 'My Yoga Website',
-      testName: 'Testing 1680x1050 screensize',
-      browser: { width: 1680, height: 1050 }
+      testName: 'Cross Browser + Device',
+      browser: [{ width: 1680, height: 1050, name: 'firefox' },
+                { width: 1024, height: 768, name: 'chrome' },
+                { deviceName: 'iPhone X', screenOrientation: 'landscape', name: 'chrome' }
+               ]
     });
+
       cy.eyesCheckWindow('Home screen')
 
     cy.get(':nth-child(3) > .button').click()
@@ -18,6 +22,6 @@ describe('rathdowneyogaroom test', () => {
 
       cy.eyesCheckWindow('Back to Home screen')
 
-    cy.eyesClose();
+    cy.eyesClose()
   });
 });
