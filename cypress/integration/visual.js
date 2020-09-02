@@ -6,8 +6,8 @@ describe('YogaRoom E2E Test Suite', () => {
       testName: 'Cross Browser/Viewport/Device',
       browser: [{ width: 1366, height: 768, name: 'firefox' },
                 { width: 1920, height: 1080, name: 'chrome' },
-                { width: 1440, height: 900, name: 'chrome-one-version-back' },
-                { deviceName: 'iPhone XR', screenOrientation: 'landscape', name: 'chrome' }]
+                { width: 1440, height: 900, name: 'safari' },
+                { deviceName: 'iPhone X', screenOrientation: 'portrait', name: 'chrome' }]
              })
            })
 
