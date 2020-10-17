@@ -18,5 +18,6 @@ describe('My First Test using Cypress', () => {
     cy.get('.button').click()
     cy.url().should('include', 'login')
     cy.get('h2').should('include.text', 'Login Page')
+    cy.get('.large-4 > div > a').click()
   })
 })

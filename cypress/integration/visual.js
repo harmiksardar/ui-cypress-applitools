@@ -17,7 +17,8 @@ describe('YogaRoom E2E Test Suite', () => {
 
   it('YogaRoom E2E Test Case', () => {
     cy.visit('https://rathdowneyogaroom.com.au')
-    cy.get('#text01').should('contain', 'RATHDOWNE YOGA ROOM')
+    cy.get('#text01')
+      .should('contain', 'RATHDOWNE YOGA ROOM')
     cy.get(':nth-child(3) > .button').click()
     cy.url().should('include', 'classes')
     cy.eyesCheckWindow('Classes screen')
