@@ -1,7 +1,7 @@
 describe('My First Test using Cypress', () => {
   it('this test does not do much!', () => {
     //Setting up pre-condition
-    cy.visit('/')
+    cy.visit('https://the-internet.herokuapp.com/')
     cy.contains('Form Authentication').click()
     cy.url().should('include', '/login')
     //Action
