@@ -6,4 +6,3 @@ Automating Functional (Cypress) + Visual UI (Applitools) testing is so much fun 
 
 NOTE: Any testing strategy cannot just evaluate how it finds bugs; it also must evaluate how it enables developers to fix (and even prevent) bugs!!
 
-
