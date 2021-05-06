@@ -22,7 +22,7 @@ describe('YogaRoom E2E Test Suite', () => {
     cy.get(':nth-child(2) > .button').click()
     cy.url().should('include', 'classes')
     cy.eyesCheckWindow('Classes screen')
-    cy.get('#buttons05 > li > .button').click()
+    cy.get('#buttons06 > li > .button').click()
     cy.url().should('not.include', 'classes')
     cy.eyesCheckWindow('Back to Home screen')
   })
